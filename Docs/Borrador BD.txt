@@ -1,0 +1,65 @@
+¿usuario protectora?
+id_usuario
+
+captura de animal
+-id_perro pk
+-sexo fk
+-edad fk
+-especie
+-color
+-color_extra
+-raza
+-estatus fk
+-foto
+-area (municipio)
+- fecha de captura date
+- fecha de entrega date
+
+¿animal entregados?
+-id_perro pk
+-sexo fk
+-edad fk
+-especie
+-color
+-color_extra
+-rasgos particulares
+-tamaño
+-raza
+-estatus fk
+-foto
+-area (municipio)
+- fecha de entrega date
+
+¿raza perro?
+id_raza
+raza
+(mix,chihuahua)
+
+sexo animal
+-id_sexo
+-sexo
+(macho,hembra)
+
+tamaño animal
+-id_tamaño
+-tamaño
+(mini,pequeño, mediano, grande,extra grande)
+
+edad animal
+-id_edad
+-edad
+(cachorro,joven,adulto)
+
+estado del animal
+-id_estatus
+-estatus
+(encontrado,adoptado,entregado,sacrificado)
+
+municipio
+-id_municipio
+-municipio
+(tijuana,tecate,mexicali,ensenada, 
+rosarito, san quintin)
+
+pagina
+centros de rescate info
