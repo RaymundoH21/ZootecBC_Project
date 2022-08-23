@@ -1,1 +1,4 @@
 Links para considerar en el proyecto
+
+- ejemplo de proyecto Aplicación Web para la Gestión de Adopción y Localización de Mascotas Perdidas:
+https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwj1urek8d35AhXBD0QIHZTOAVMQFnoECC4QAQ&url=https%3A%2F%2Fruc.udc.es%2Fdspace%2Fbitstream%2Fhandle%2F2183%2F25167%2FC.Romar%25C3%25ADs_Aplicaci%25C3%25B3n_Web_para_la_Gesti%25C3%25B3n_de_Adopci%25C3%25B3n_y_Localizaci%25C3%25B3n_de_Mascotas_Perdidas_2019.pdf&usg=AOvVaw3aQbCDkQVFQ7yqokCDBpha
