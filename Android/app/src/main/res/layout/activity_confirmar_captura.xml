@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".confirmar_captura">
+
+    <Button
+        android:id="@+id/btn_subir_captura2"
+        android:layout_width="240dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="212dp"
+        android:backgroundTint="@color/boton_color"
+        android:enabled="true"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/load_capture"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_nueva_captura2"
+        android:layout_width="237dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="304dp"
+        android:backgroundTint="@color/boton_color"
+        android:enabled="true"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/new_capture"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="191dp"
+        android:layout_height="172dp"
+        app:srcCompat="@mipmap/zootec_logo_foreground"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="376dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/imagen_stock_foreground" />
+</androidx.constraintlayout.widget.ConstraintLayout>
