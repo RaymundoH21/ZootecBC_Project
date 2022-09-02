@@ -1,0 +1,69 @@
+create table animal(
+id_animal int primary key not null,
+Color varchar(45),
+Color_Extra varchar(45),
+Foto varchar(45),
+Fecha_entrada DATETIME,
+Fehca_salida DATETIME,
+Tamaño_animal_id_tamano int foreign key references Tamano_animal(id_tamano),
+edad_animal_id_edad int foreign key references Edad_animal(id_edad),
+Sexo_animal_id_sexo int foreign key references Sexo_animal(id_sexo),
+Estatus_animal_id_estatus int foreign key references Estatus_animal(id_estatus), 
+Raza_animal_id_raza int foreign key references Raza_animal(id_raza),
+Especie_animal_id_especie int foreign key references Especie_animal(id_especie),
+Municipio_id_municipio int foreign key references Municipio(id_municipio),
+Empleados_id_empleado int foreign key references Empleados(id_empleado),
+Empleados_municipio_id_municipio int foreign key references Empleados(Municipio_id_municipio),
+Empleados_rol_empleado_id_roles int foreign key references Empleados(Rol_empleado_id_roles),
+)
+
+create table Empleados(
+id_empleado int primary key not null,
+Nombre_Empleado varchar(45),
+Apellido_Empleado varchar(45),
+User varchar(45),
+Contrasena varchar(45),
+Puesto varchar(45),
+Telefono int,
+Foto varchar(45),
+Municipio_id_municipio int foreign key references Municipio(id_municipio), 
+Rol_empleado_id_roles int foreign key 
+)
+
+create table Municipio(
+id_municipio int primary key not null,
+Municipio varchar(45)
+)
+
+create table Edad_animal(
+id_edad int primary key not null,
+Edad varchar(45)
+)
+
+create table Estatus_animal(
+id_estatus int primary key not null,
+Estatus varchar(45)
+)
+
+create table Tamano_animal
+id_tamano int primary key not null,
+Tamano varchar(45)
+)
+
+create table Sexo_animal(
+id_sexo int primary key not null,
+Sexo varchar(45)
+)
+
+create table Raza_animal(
+id_raza int primary key not null,
+Raza varchar(45),
+Especie_animal_id_especie int foreign key references Especie_animal(id_especie)
+)
+
+create table Especie_animal(
+id_especie int primary key not null,
+especie varchar(45)
+)
+
+
