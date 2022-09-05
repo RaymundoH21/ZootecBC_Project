@@ -3,11 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Escuela Backup/Universidad/Residencia/Github/ZootecBC_Project/Android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.448" />
+        <entry key="..\:/Escuela Backup/Universidad/Residencia/Github/ZootecBC_Project/Android/app/src/main/res/drawable/ic_launcher_background.xml" value="0.448" />
+        <entry key="..\:/Escuela Backup/Universidad/Residencia/Github/ZootecBC_Project/Android/app/src/main/res/drawable/imagen_stock_background.xml" value="0.448" />
+        <entry key="..\:/Escuela Backup/Universidad/Residencia/Github/ZootecBC_Project/Android/app/src/main/res/drawable/zootec_logo_background.xml" value="0.448" />
         <entry key="..\:/Escuela Backup/Universidad/Residencia/Github/ZootecBC_Project/Android/app/src/main/res/layout/activity_confirmar_captura.xml" value="0.452445652173913" />
         <entry key="..\:/Escuela Backup/Universidad/Residencia/Github/ZootecBC_Project/Android/app/src/main/res/layout/activity_editar_captura.xml" value="0.45742753623188404" />
         <entry key="..\:/Escuela Backup/Universidad/Residencia/Github/ZootecBC_Project/Android/app/src/main/res/layout/activity_main.xml" value="0.45063405797101447" />
+        <entry key="..\:/Escuela Backup/Universidad/Residencia/Github/ZootecBC_Project/Android/app/src/main/res/layout/activity_menu_animales.xml" value="0.452445652173913" />
         <entry key="..\:/Escuela Backup/Universidad/Residencia/Github/ZootecBC_Project/Android/app/src/main/res/layout/activity_menu_captura.xml" value="0.45063405797101447" />
         <entry key="..\:/Escuela Backup/Universidad/Residencia/Github/ZootecBC_Project/Android/app/src/main/res/layout/activity_nueva_captura.xml" value="0.45063405797101447" />
+        <entry key="..\:/Escuela Backup/Universidad/Residencia/Github/ZootecBC_Project/Android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.448" />
       </map>
     </option>
   </component>

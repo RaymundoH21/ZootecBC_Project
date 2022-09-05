@@ -8,15 +8,15 @@
     tools:context=".nueva_captura">
 
     <ImageView
-        android:id="@+id/foto"
-        android:layout_width="131dp"
-        android:layout_height="128dp"
-        android:layout_marginTop="96dp"
-        android:background="@color/foto_color"
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.821"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_camera" />
+        app:srcCompat="@mipmap/imagen_stock_foreground" />
 
     <ImageView
         android:id="@+id/Logo_crear_captura"
@@ -227,5 +227,17 @@
         app:layout_constraintHorizontal_bias="0.14"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/img_btn_camara"
+        android:layout_width="103dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="132dp"
+        android:backgroundTint="@color/boton_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

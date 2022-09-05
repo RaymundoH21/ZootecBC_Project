@@ -9,33 +9,33 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
-public class menu_captura extends AppCompatActivity {
-
-    Button subir;
-    Button editar;
+public class menu_animales extends AppCompatActivity {
+    ImageButton editar;
+    Button regresar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_captura);
-        subir=(Button) findViewById(R.id.btn_nueva_captura);
-        editar=(Button) findViewById(R.id.btn_editar_captura);
+        setContentView(R.layout.activity_menu_animales);
+        editar=(ImageButton) findViewById(R.id.img_btn_editar_1);
+        regresar=(Button) findViewById(R.id.btn_regresar);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(color_actionbar)));
-
-        subir.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(menu_captura.this, nueva_captura.class);
-                startActivity(i);
-            }
-        });
 
         editar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent e = new Intent(menu_captura.this, menu_animales.class);
-                startActivity(e);
+                Intent i = new Intent(menu_animales.this, editar_captura.class);
+                startActivity(i);
+            }
+        });
+
+        regresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent r = new Intent(menu_animales.this, menu_captura.class);
+                startActivity(r);
             }
         });
     }

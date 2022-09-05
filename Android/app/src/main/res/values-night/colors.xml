@@ -4,4 +4,5 @@
     <color name="boton_color">#CEB1BE</color>
     <color name="foto_color">#F3B7C3</color>
     <color name="letras_color">#CCADBD</color>
+    <color name="color_actionbar">#B87173</color>
 </resources>

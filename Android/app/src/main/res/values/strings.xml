@@ -11,8 +11,9 @@
     <string name="login_failed">"Inicio de sesion fallido"</string>
     <string name="new_capture">Nueva captura</string>
     <string name="load_capture">Subir captura</string>
-    <string name="edit_capture">Editar captura</string>
+    <string name="edit_capture">Editar capturas</string>
     <string name="subir">Subir</string>
     <string name="save">Guardar</string>
     <string name="cancel">Cancelar</string>
+    <string name="returning">Regresar</string>
 </resources>
