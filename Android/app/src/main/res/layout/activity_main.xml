@@ -7,14 +7,42 @@
     android:background="@color/background_color"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/btnSendToResetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:backgroundTint="@color/boton_color"
+        android:enabled="true"
+        android:text="Olvide mi contraseña"
+        android:textColor="@color/black"
+        android:textSize="9sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="544dp"
+        android:backgroundTint="@color/boton_color"
+        android:enabled="true"
+        android:text="@string/action_sign_up"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
-        android:id="@+id/Username"
+        android:id="@+id/etEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="252dp"
         android:ems="10"
-        android:hint="@string/prompt_user"
-        android:inputType="textPersonName"
+        android:hint="@string/prompt_email"
+        android:inputType="textWebEmailAddress"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -32,7 +60,7 @@
         app:srcCompat="@mipmap/zootec_logo_foreground" />
 
     <Button
-        android:id="@+id/btn_Login"
+        android:id="@+id/btn_btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="412dp"
@@ -46,7 +74,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/Password"
+        android:id="@+id/etPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="320dp"

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "333373314243",
+    "firebase_url": "https://zootecbc-default-rtdb.firebaseio.com",
+    "project_id": "zootecbc",
+    "storage_bucket": "zootecbc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333373314243:android:1fc1b9ebe2fd1efbe7be76",
+        "android_client_info": {
+          "package_name": "com.example.zootecbc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333373314243-pb31g3ueggkcig57gmrbf9k0196oalkt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDziqqdFMOo1d5SNYGGfUj9MF6OM5yh6j8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333373314243-pb31g3ueggkcig57gmrbf9k0196oalkt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
