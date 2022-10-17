@@ -1,9 +1,12 @@
 package com.example.zootecbc;
 
+import static com.example.zootecbc.R.color.color_actionbar;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,6 +29,7 @@ public class SignupActivity extends AppCompatActivity {
     private EditText etUsername;
     private EditText etEmail;
     private EditText etPassword;
+
     private Button btnSignup;
     private Button btnSendtologin;
 
@@ -42,12 +46,16 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(color_actionbar)));
+        this.setTitle("Crear cuenta");
+
         mAuth = FirebaseAuth.getInstance();
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
         etUsername = (EditText) findViewById(R.id.etUsername);
         etEmail = (EditText) findViewById(R.id.etEmail);
         etPassword = (EditText) findViewById(R.id.etPassword);
+
         btnSignup = (Button) findViewById(R.id.btnSignup);
         btnSendtologin = (Button) findViewById(R.id.btnSendToLogin);
 
@@ -64,20 +72,26 @@ public class SignupActivity extends AppCompatActivity {
                         registerUser();
                     }
                     else{
-                        Toast.makeText(SignupActivity.this, "La contraseña debe contener 6 caracteres como minimo", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SignupActivity.this,
+                                "La contraseña debe contener 6 caracteres como minimo",
+                                Toast.LENGTH_SHORT).show();
                     }
                 }
                 else{
-                    Toast.makeText(SignupActivity.this, "Debe llenar los campos", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignupActivity.this,
+                            "Debe llenar los campos",
+                            Toast.LENGTH_SHORT).show();
                 }
 
             }
         });
 
-        btnSendtologin.setOnClickListener(new View.OnClickListener() {
+        btnSendtologin.setOnClickListener(
+                new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SignupActivity.this, MainActivity.class));
+                startActivity(new Intent(SignupActivity.
+                        this, MainActivity.class));
             }
         });
 
@@ -85,7 +99,8 @@ public class SignupActivity extends AppCompatActivity {
 
     private void registerUser(){
 
-        mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        mAuth.createUserWithEmailAndPassword(email, password).
+                addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
 
@@ -98,21 +113,27 @@ public class SignupActivity extends AppCompatActivity {
 
                     String id_usuario = mAuth.getCurrentUser().getUid();
 
-                    mDatabase.child("Usuarios").child(id_usuario).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    mDatabase.child("Usuarios").child(id_usuario).setValue(map).
+                            addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task2) {
                             if (task2.isSuccessful()){
-                                startActivity(new Intent(SignupActivity.this, menu_captura.class));
+                                startActivity(new Intent(SignupActivity.
+                                        this, menu_captura.class));
                                 finish();
                             }
                             else{
-                                Toast.makeText(SignupActivity.this, "No se pudieron crear los datos correctamente", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SignupActivity.this,
+                                        "No se pudieron crear los datos correctamente",
+                                        Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
                 }
                 else{
-                    Toast.makeText(SignupActivity.this, "No se pudo registrar este usuario", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignupActivity.this,
+                            "No se pudo registrar este usuario",
+                            Toast.LENGTH_SHORT).show();
                 }
             }
         });

@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/background_color"
-    tools:context=".nueva_captura">
+    android:backgroundTint="@color/background_color"
+    tools:context=".CreatePetFragment">
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="0dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
@@ -20,30 +21,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/pet_photo"
-            android:layout_width="116dp"
-            android:layout_height="107dp"
-            android:layout_gravity="center"
-            android:adjustViewBounds="false"
-            app:srcCompat="@drawable/ic_baseline_add_a_photo_24" />
-
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/btn_photo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="#3F51B5"
-                android:drawableLeft="@drawable/ic_baseline_edit_24"
-                android:text="Foto"
-                android:textColor="@color/white" />
-
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            android:text="Agregar animal"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/area"
@@ -121,39 +105,13 @@
             android:layout_width="match_parent"
             android:layout_height="15dp" />
 
-        <LinearLayout
+        <Button
+            android:id="@+id/btn_add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/btn_add"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:backgroundTint="@color/boton_color"
-                android:gravity="center"
-                android:text="Añadir"
-                android:textColor="@color/black" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:paddingRight="5dp" />
-
-            <Button
-                android:id="@+id/btn_close"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:backgroundTint="@color/boton_color"
-                android:text="Salir"
-                android:textColor="@color/black" />
-        </LinearLayout>
+            android:backgroundTint="@color/boton_color"
+            android:text="Añadir"
+            android:textColor="@color/black" />
 
     </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

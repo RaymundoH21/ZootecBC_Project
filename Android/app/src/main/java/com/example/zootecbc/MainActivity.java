@@ -37,6 +37,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getSupportActionBar().setBackgroundDrawable(new
+                ColorDrawable(getResources().getColor(color_actionbar)));
+
+        this.setTitle("Inicio de sesion");
+
         mAuth = FirebaseAuth.getInstance();
 
         etEmail = (EditText) findViewById(R.id.etEmail);
@@ -44,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
         btnLogin = (Button) findViewById(R.id.btn_btnLogin);
         btn_Signup = (Button) findViewById(R.id.btn_Signup);
         mButtonResetPassword = (Button) findViewById(R.id.btnSendToResetPassword);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(color_actionbar)));
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,7 +60,8 @@ public class MainActivity extends AppCompatActivity {
                     loginUser();
                 }
                 else{
-                    Toast.makeText(MainActivity.this, "Complete los campos", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this,
+                            "Complete los campos", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -64,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
         mButtonResetPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, ResetPasswordActivity.class));
+                startActivity(new Intent(MainActivity.this,
+                        ResetPasswordActivity.class));
             }
         });
 
@@ -72,22 +78,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent e = new Intent(MainActivity.this, SignupActivity.class);
+                Intent e = new Intent(MainActivity.this,
+                        SignupActivity.class);
                 startActivity(e);
             }
         });
     }
 
     private void loginUser(){
-        mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        mAuth.signInWithEmailAndPassword(email,password).
+                addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
-                    startActivity(new Intent(MainActivity.this, menu_captura.class));
+                    startActivity(new Intent(MainActivity.this,
+                            menu_captura.class));
                     finish();
                 }
                 else{
-                    Toast.makeText(MainActivity.this, "No se pudo iniciar sesion compruebe los datos", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this,
+                            "No se pudo iniciar sesion compruebe los datos",
+                            Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -98,7 +109,8 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
 
         if (mAuth.getCurrentUser()!=null){
-            startActivity(new Intent(MainActivity.this, menu_captura.class));
+            startActivity(new Intent(MainActivity.
+                    this, menu_captura.class));
             finish();
         }
 

@@ -9,32 +9,32 @@
 
     <Button
         android:id="@+id/btnSignout"
-        android:layout_width="237dp"
-        android:layout_height="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="444dp"
         android:backgroundTint="@color/boton_color"
         android:enabled="true"
         android:fontFamily="sans-serif-medium"
         android:text="@string/action_sign_out"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_nueva_captura"
-        android:layout_width="240dp"
-        android:layout_height="52dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="272dp"
         android:backgroundTint="@color/boton_color"
         android:enabled="true"
         android:fontFamily="sans-serif-medium"
         android:text="@string/new_capture"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -72,15 +72,15 @@
 
     <Button
         android:id="@+id/btn_editar_captura"
-        android:layout_width="237dp"
+        android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="364dp"
         android:backgroundTint="@color/boton_color"
         android:enabled="true"
         android:fontFamily="sans-serif-medium"
-        android:text="@string/edit_capture"
+        android:text="Lista Animales"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

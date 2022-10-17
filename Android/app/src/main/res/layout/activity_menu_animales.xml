@@ -7,142 +7,31 @@
     android:background="@color/background_color"
     tools:context=".menu_animales">
 
-    <Button
-        android:id="@+id/btn_regresar"
-        android:layout_width="127dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="512dp"
-        android:backgroundTint="@color/boton_color"
-        android:enabled="true"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/returning"
-        android:textColor="@color/black"
-        android:textSize="14sp"
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:queryHint="Buscar por area"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="98dp"
-        android:layout_height="97dp"
-        android:layout_marginTop="172dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAnimales"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:paddingTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.843"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/imagen_stock_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton7"
-        android:layout_width="98dp"
-        android:layout_height="97dp"
-        android:layout_marginTop="392dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.843"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/imagen_stock_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="98dp"
-        android:layout_height="97dp"
-        android:layout_marginTop="172dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/imagen_stock_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton9"
-        android:layout_width="98dp"
-        android:layout_height="97dp"
-        android:layout_marginTop="392dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.143"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/imagen_stock_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton8"
-        android:layout_width="98dp"
-        android:layout_height="97dp"
-        android:layout_marginTop="392dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/imagen_stock_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="98dp"
-        android:layout_height="97dp"
-        android:layout_marginTop="280dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.843"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/imagen_stock_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="98dp"
-        android:layout_height="97dp"
-        android:layout_marginTop="280dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/imagen_stock_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="98dp"
-        android:layout_height="97dp"
-        android:layout_marginTop="280dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.143"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/imagen_stock_foreground" />
-
-    <ImageButton
-        android:id="@+id/img_btn_editar_1"
-        android:layout_width="98dp"
-        android:layout_height="97dp"
-        android:layout_marginTop="172dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.143"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/imagen_stock_foreground" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/zootec_logo_foreground"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="21dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <TextView
-        android:id="@+id/tv_titulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
-        android:text="Selecciona al animal:"
-        android:textColor="@color/letras_color"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

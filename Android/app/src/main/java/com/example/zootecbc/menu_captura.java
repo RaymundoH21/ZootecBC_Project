@@ -29,12 +29,17 @@ public class menu_captura extends AppCompatActivity {
 
     Button subir;
     Button editar;
+
     private Button mButtonSignOut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_captura);
+
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(color_actionbar)));
+        this.setTitle("Menu principal");
+
         subir=(Button) findViewById(R.id.btn_nueva_captura);
         editar=(Button) findViewById(R.id.btn_editar_captura);
 
@@ -46,13 +51,11 @@ public class menu_captura extends AppCompatActivity {
 
         mButtonSignOut = (Button) findViewById(R.id.btnSignout);
 
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(color_actionbar)));
-
         subir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(menu_captura.this, nueva_captura.class);
-                startActivity(i);
+                CreatePetFragment fm = new CreatePetFragment();
+                fm.show(getSupportFragmentManager(), "Navegar a fragment");
             }
         });
 
@@ -64,16 +67,19 @@ public class menu_captura extends AppCompatActivity {
             }
         });
 
-        mButtonSignOut.setOnClickListener(new View.OnClickListener() {
+        mButtonSignOut.setOnClickListener(
+                new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mAuth.signOut();
-                startActivity(new Intent(menu_captura.this, MainActivity.class));
+                startActivity(new Intent(menu_captura.
+                        this, MainActivity.class));
                 finish();
             }
         });
         getUserInfo();
     }
+
     private void getUserInfo(){
         String id_usuario = mAuth.getCurrentUser().getUid();
         mDatabase.child("Usuarios").child(id_usuario).addValueEventListener(new ValueEventListener() {

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color"
+    android:gravity="start"
     android:orientation="vertical"
     tools:context=".SignupActivity">
 
@@ -14,8 +15,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="@string/prompt_user"
         android:inputType="textPersonName"
-        android:hint="@string/prompt_user"/>
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/etEmail"
@@ -38,17 +40,18 @@
         android:minHeight="48dp" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom"
-        android:orientation="vertical"
-        >
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/btnSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/boton_color"
+            android:gravity="center"
             android:text="@string/action_sign_up"
             android:textColor="@color/black" />
 
@@ -56,9 +59,9 @@
             android:id="@+id/btnSendToLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:backgroundTint="@color/boton_color"
             android:text="Ya tengo cuenta"
-            android:layout_marginTop="10dp"
             android:textColor="@color/black" />
     </LinearLayout>
 
