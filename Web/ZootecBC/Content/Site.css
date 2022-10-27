@@ -75,3 +75,11 @@ bot{
 tarjeta{
     background-color:lavenderblush;
 }
+tamano {
+    max-width: 1040px;
+}
+buttons {
+    background-image: url( https://i.imgur.com/QqwvZGs.png); 
+    max-width: 720px;
+
+}

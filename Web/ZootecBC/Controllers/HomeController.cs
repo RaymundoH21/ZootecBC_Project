@@ -26,5 +26,25 @@ namespace ZootecBC.Controllers
 
             return View();
         }
+        public ActionResult Ensenada()
+        {
+            ViewBag.Message = "Ensenada";
+            return View();
+        }
+        public ActionResult Rosarito()
+        {
+            ViewBag.Message = "Rosarito";
+            return View();
+        }
+        public ActionResult Tecate()
+        {
+            ViewBag.Message = "Tecate";
+            return View();
+        }
+        public ActionResult Busqueda()
+        {
+            ViewBag.Message = "Busqueda";
+            return View();
+        }
     }
 }
