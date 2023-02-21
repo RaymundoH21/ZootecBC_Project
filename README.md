@@ -9,3 +9,6 @@ raymundo.hirales17@tectijuana.edu.mx
 Por Oscar Eduardo Galaviz Lona
 
 Asesora: Isaura Lara Arenas 
+
+Pagina WEB Zootec:
+https://www.zootecbc.online/
